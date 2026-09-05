@@ -1,14 +1,16 @@
 {
   "expo": {
     "name": "app",
-    "slug": "app",
+    "slug": "bilal-seerwan",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "app",
     "userInterfaceStyle": "automatic",
     "ios": {
-      "icon": "./assets/expo.icon"
+      "icon": "./assets/expo.icon",
+      "bundleIdentifier": "com.anonymous.app",
+      "appleTeamId": "78MN6BHCS2"
     },
     "android": {
       "adaptiveIcon": {
@@ -17,7 +19,10 @@
         "backgroundImage": "./assets/images/android-icon-background.png",
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+      ]
     },
     "web": {
       "output": "static",
@@ -39,6 +44,13 @@
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
-    }
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "a754d18b-f160-43be-a2bd-0d48e8f1c1c7"
+      }
+    },
+    "owner": "bilalserwans-team"
   }
 }
